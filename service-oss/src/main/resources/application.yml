@@ -10,6 +10,6 @@ spring:
 aliyun:
   oss:
     endpoint: oss-cn-beijing.aliyuncs.com
-    key-id: LTAI5t8zPYg5odLgRka3sEk5
+    key-id: #阿里云申请
     bucket-name: srb-file-1112
-    key-secret: q0EERUtwKGKSaM1O6242G2smewdfOs
+    key-secret: #阿里云申请

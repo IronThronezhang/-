@@ -7,9 +7,9 @@ spring:
   application:
     name: service-oss # 服务名
 
-aliyun:
-  oss:
-    endpoint: oss-cn-beijing.aliyuncs.com
-    key-id: #阿里云申请
-    bucket-name: srb-file-1112
-    key-secret: #阿里云申请
+  #aliyun:
+    #oss:
+    #endpoint: oss-cn-beijing.aliyuncs.com
+    #key-id: #阿里云申请
+    #bucket-name: srb-file-1112
+    #key-secret: #阿里云申请

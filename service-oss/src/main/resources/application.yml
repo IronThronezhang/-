@@ -9,7 +9,7 @@ spring:
 
   #aliyun:
     #oss:
-    #endpoint: oss-cn-beijing.aliyuncs.com
+    #endpoint: #注释
     #key-id: #阿里云申请
-    #bucket-name: srb-file-1112
+    #bucket-name: #注释
     #key-secret: #阿里云申请

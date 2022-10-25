@@ -64,8 +64,8 @@ public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements Di
 
         try {
             //首先查询redis中是否存在数据列表
-            List<Dict> dictList = (List<Dict>)redisTemplate.opsForValue().get("srb:core:dictList:" + parentId);
-            if(dictList != null){
+            List<Dict> dictList = (List<Dict>) redisTemplate.opsForValue().get("srb:core:dictList:" + parentId);
+            if (dictList != null) {
                 //如果存在则从redis中直接返回数据列表
                 log.info("从redis中获取数据列表");
                 return dictList;
@@ -100,14 +100,15 @@ public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements Di
 
     /**
      * 判断当前id所在的节点下是否有子节点
+     *
      * @param id
      * @return
      */
-    private boolean hasChildren(Long id){
+    private boolean hasChildren(Long id) {
         QueryWrapper<Dict> dictQueryWrapper = new QueryWrapper<>();
         dictQueryWrapper.eq("parent_id", id);
         Integer count = baseMapper.selectCount(dictQueryWrapper);
-        if(count.intValue() > 0){
+        if (count.intValue() > 0) {
             return true;
         }
         return false;
